@@ -8,7 +8,11 @@ class Myfirsttest(unittest.TestCase):
         self.assertEqual(hello_world(), 'hello world!')
 
     def test_custom_num_list(self):
-        self.assertEqual(len(creat_num_list(10)),10)
+        self.assertEqual(len(creat_num_list(10)), 10)
 
-        def test_custom_func_x(self):
-            self.assertEqual(custom_func_x(3,2,3),54)
+    def test_custom_func_x(self):
+        self.assertEqual(custom_func_x(3, 2, 3), 54)
+
+    def tes_custome_non_lin_num_list(self):
+        self.assertEqual(custom_non_lin_num_list(5,2,3)[2],16)
+        self.assertEqual(custom_non_lin_num_list(5,2,3)[4],48)
